@@ -56,9 +56,10 @@ func main() {
 		}
 
 	}
-
-	if vendegek[len(vendegek)-1].erk > vendegek[len(vendegek)-2].tav {
-		photo = append(photo, vendegek[len(vendegek)-1].erk)
+	
+	l:=len(vendegek)-1
+	if vendegek[l].erk > vendegek[l-1].tav {
+		photo = append(photo, vendegek[l].erk)
 	}
 
 	fmt.Println(photo)
